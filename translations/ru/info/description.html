@@ -1,0 +1,48 @@
+<!-- Describe task in general -->
+
+<p>
+    Вам даны текущие цены на акции. Вам необходимо выяснить за какие акции дают большую цену.
+</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input: </strong> Словарь (dict), в котором ключи - это рыночный код, а значение - это цена за акцию(float)
+</p>
+
+<p>
+    <strong>Output: </strong> Строка, рыночный код
+</p>
+
+
+<!-- Put some usage examples -->
+<div class="for_info_only">
+    <p>
+        <strong>Example:</strong>
+    </p>
+
+{% if interpreter.slug == "js-node" %}
+<pre class="brush: javascript">bestStock({
+    'CAC': 10.0,
+    'ATX': 390.2,
+    'WIG': 1.2
+}) == 'ATX'
+bestStock({
+    'CAC': 91.1,
+    'ATX': 1.01,
+    'TASI': 120.9
+}) == 'TASI'
+</pre>
+{% else %}
+<pre class="brush: python">best_stock({
+    'CAC': 10.0,
+    'ATX': 390.2,
+    'WIG': 1.2
+}) == 'ATX'
+best_stock({
+    'CAC': 91.1,
+    'ATX': 1.01,
+    'TASI': 120.9
+}) == 'TASI'
+</pre>
+{% endif %}
+</div>
